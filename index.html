@@ -15,11 +15,54 @@
     <!-- ==== tailwindcss === -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <h1>assalamuolaikum</h1>
-    <h1>assalamuolaikum</h1>
-    <h1>assalamuolaikum</h1>
-    <h1>assalamuolaikum</h1>
+  <body class="container mx-auto">
+    <!-- nav bar/// -->
+    <nav
+      class="container mx-auto w-[1920px] h-[100px] flex justify-between items-center p-2"
+    >
+      <div class="flex items-center">
+        <img src="./assets/logo.png" alt="" class="w-12" />
+        <h1 class="font-extrabold text-[#006747] ml-1">
+          Emergency <br />Services
+        </h1>
+      </div>
+      <div class="flex gap-10 justify-between items-center">
+        <div
+          class="w-20 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#ECFFF0]"
+        >
+          <h1 class="font-bold">0</h1>
+          <br />
+          <img src="./assets/heart.png" alt="" class="w-6" />
+        </div>
+        <div
+          class="w-20 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#ECFFF0]"
+        >
+          <h1 class="font-bold">100</h1>
+          <br />
+          <img src="./assets/coin.png" alt="" class="w-6" />
+        </div>
+        <div
+          class="w-20 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#00A63E]"
+        >
+          <h1 class="font-semibold text-white">2 Copy</h1>
+          <br />
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner/// -->
+    <section
+      class="container mx-auto w-[1920px] h-[239px] bg-gradient-to-r from-[#013223] from-0% via-[#006747] via-50% to-[#013223] to-100% flex flex-col justify-center items-center text-white p-2"
+    >
+      <img src="./assets/logo.png" alt="" class="w-12" />
+      <h3>জরুরি সেবা ডিরেক্টরি</h3>
+      <p>
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </section>
+
+    <!-- card/// -->
     <script src="./index.js"></script>
   </body>
 </html>
