@@ -50,7 +50,9 @@
         <div
           class="w-25 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#00A63E]"
         >
-          <h1 class="font-semibold text-white">2 Copy</h1>
+          <h1 class="font-semibold text-white">
+            <span id="Copy-count">2</span> Copy
+          </h1>
           <br />
         </div>
       </div>
@@ -113,9 +115,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -159,9 +161,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -205,9 +207,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -251,9 +253,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -297,9 +299,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -343,9 +345,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -389,9 +391,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -433,9 +435,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -479,9 +481,9 @@
             >
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070] copy-btn"
                 >
-                  <i class="fa-regular fa-copy copy-btn"></i>Copy
+                  <i class="fa-regular fa-copy"></i>Copy
                 </button>
               </div>
               <div>
@@ -504,11 +506,13 @@
             <div class="font-bold flex items-center">
               <i class="fa-regular fa-clock text-[#707070]"></i> Call History
             </div>
-            <div
-              class="w-25 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#00A63E]"
-            >
-              <h1 class="font-semibold text-white">Clear</h1>
-              <br />
+            <div>
+              <button
+                id="clear-btn"
+                class="btn w-25 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#00A63E] font-semibold text-white"
+              >
+                Clear
+              </button>
             </div>
           </div>
           <div id="cart-container" class="flex flex-col gap-2"></div>

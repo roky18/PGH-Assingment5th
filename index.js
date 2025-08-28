@@ -52,13 +52,45 @@ for (let cardCallBtn of cardCallBtns) {
       cardCallBtn.parentNode.parentNode.parentNode.children[1].children[2]
         .innerText;
     let cardContainer = getEleID("cart-container");
+    let time = new Date().toLocaleTimeString();
     let newCart = document.createElement("div");
     newCart.innerHTML = `
-<div class="bg-[#f2f2f2] rounded-xl p-4">
+<div class="bg-[#f2f2f2] rounded-xl p-4 flex justify-between items-center">
+              <div>
               <h1 class="font-bold">${helpName}</h1>
               <h1 class="font-bold text-[#707070]">${helpNum}</h1>
+              </div>
+              <div>
+              <h1>${time}</h1>
+              </div>
+
             </div>
 `;
     cardContainer.append(newCart);
+  });
+}
+
+getEleID("clear-btn").addEventListener("click", function () {
+  let cardContainer = getEleID("cart-container");
+  cardContainer.innerHTML = "";
+});
+
+// copy section///
+let totalCopy = 2;
+
+let copyBtns = document.querySelectorAll(".copy-btn");
+
+for (let copyBtn of copyBtns) {
+  copyBtn.addEventListener("click", function () {
+    totalCopy++;
+
+    document.getElementById("Copy-count").textContent = totalCopy;
+
+    let copyTargetText =
+      copyBtn.parentNode.parentNode.parentNode.children[1].children[2]
+        .innerText;
+    navigator.clipboard.writeText(copyTargetText).then(function () {
+      alert("নম্বর কপি হয়েছেঃ " + copyTargetText);
+    });
   });
 }
