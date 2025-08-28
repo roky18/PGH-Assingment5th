@@ -36,14 +36,14 @@
         <div
           class="w-20 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#ECFFF0]"
         >
-          <h1 class="font-bold"><span id="mainHeart">0</span></h1>
+          <h1 class="font-bold"><span id="click-counter">0</span></h1>
           <br />
           <img src="./assets/heart.png" alt="" class="w-6" />
         </div>
         <div
           class="w-20 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#ECFFF0]"
         >
-          <h1 class="font-bold"><span id="coin">100</span></h1>
+          <h1 class="font-bold"><span id="coin-store">100</span></h1>
           <br />
           <img src="./assets/coin.png" alt="" class="w-6" />
         </div>
@@ -80,7 +80,7 @@
         >
           <div
             id="card-1"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-1-head" class="flex justify-between">
               <img
@@ -89,15 +89,18 @@
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
               <div>
-                <i id="heart" class="fa-regular fa-heart text-[#707070]"></i>
+                <i
+                  id="toch-heart"
+                  class="fa-regular fa-heart text-[#707070] heart-btn"
+                ></i>
               </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">জাতীয় জরুরি সেবা</h1>
-              <p class="text-[#707070] font-semibold mb-3">
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">
                 National Emergency
               </p>
-              <h1 class="font-bold">999</h1>
+              <h1 class="font-bold Text3rdline">999</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -112,12 +115,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -126,7 +129,7 @@
           </div>
           <div
             id="card-2"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-2-head" class="flex justify-between">
               <img
@@ -134,12 +137,16 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#dfefff]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i class="fa-regular fa-heart text-[#707070] heart-btn"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">পুলিশ</h1>
-              <p class="text-[#707070] font-semibold mb-3">Police</p>
-              <h1 class="font-bold">999</h1>
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">
+                Police
+              </p>
+              <h1 class="font-bold Text3rdline">999</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -154,12 +161,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -168,7 +175,7 @@
           </div>
           <div
             id="card-3"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-3-head" class="flex justify-between">
               <img
@@ -176,12 +183,16 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i class="fa-regular fa-heart text-[#707070] heart-btn"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">ফায়ার সার্ভিস</h1>
-              <p class="text-[#707070] font-semibold mb-3">Fire Service</p>
-              <h1 class="font-bold">999</h1>
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">
+                Fire Service
+              </p>
+              <h1 class="font-bold Text3rdline">999</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -196,12 +207,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -210,7 +221,7 @@
           </div>
           <div
             id="card-4"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-4-head" class="flex justify-between">
               <img
@@ -218,12 +229,16 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i class="fa-regular fa-heart text-[#707070] heart-btn"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">অ্যাম্বুলেন্স</h1>
-              <p class="text-[#707070] font-semibold mb-3">Ambulance</p>
-              <h1 class="font-bold">1994-999999</h1>
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">
+                Ambulance
+              </p>
+              <h1 class="font-bold Text3rdline">1994-999999</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -238,12 +253,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -252,7 +267,7 @@
           </div>
           <div
             id="card-5"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-5-head" class="flex justify-between">
               <img
@@ -260,14 +275,16 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i class="fa-regular fa-heart text-[#707070] heart-btn"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">নারী ও শিশু সহায়তা</h1>
-              <p class="text-[#707070] font-semibold mb-3">
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">
                 Women & Child Helpline
               </p>
-              <h1 class="font-bold">109</h1>
+              <h1 class="font-bold Text3rdline">109</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -282,12 +299,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -296,7 +313,7 @@
           </div>
           <div
             id="card-6"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-6-head" class="flex justify-between">
               <img
@@ -304,12 +321,16 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i class="fa-regular fa-heart text-[#707070] heart-btn"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">দুদক</h1>
-              <p class="text-[#707070] font-semibold mb-3">Anti-Corruption</p>
-              <h1 class="font-bold">106</h1>
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">
+                Anti-Corruption
+              </p>
+              <h1 class="font-bold Text3rdline">106</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -324,12 +345,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -338,7 +359,7 @@
           </div>
           <div
             id="card-7"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-7-head" class="flex justify-between">
               <img
@@ -346,14 +367,16 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i class="fa-regular fa-heart text-[#707070] heart-btn"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">বিদ্যুৎ বিভ্রাট</h1>
-              <p class="text-[#707070] font-semibold mb-3">
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">
                 Electricity Outage
               </p>
-              <h1 class="font-bold">16216</h1>
+              <h1 class="font-bold Text3rdline">16216</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -368,12 +391,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -382,7 +405,7 @@
           </div>
           <div
             id="card-8"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-8-head" class="flex justify-between">
               <img
@@ -390,12 +413,14 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i class="fa-regular fa-heart text-[#707070] heart-btn"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">ব্র্যাক</h1>
-              <p class="text-[#707070] font-semibold mb-3">Brac</p>
-              <h1 class="font-bold">16445</h1>
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">Brac</p>
+              <h1 class="font-bold Text3rdline">16445</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -410,12 +435,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
@@ -424,7 +449,7 @@
           </div>
           <div
             id="card-9"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md cards-all"
           >
             <div id="card-9-head" class="flex justify-between">
               <img
@@ -432,14 +457,16 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i class="fa-regular fa-heart text-[#707070] heart-btn"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">বাংলাদেশ রেলওয়ে</h1>
-              <p class="text-[#707070] font-semibold mb-3">
+              <p class="text-[#707070] font-semibold mb-3 Text2ndline">
                 Bangladesh Railway
               </p>
-              <h1 class="font-bold">163</h1>
+              <h1 class="font-bold Text3rdline">163</h1>
               <p
                 class="w-20 h-10 flex justify-center items-center rounded-3xl p-1 bg-[#f2f2f2] text-[#707070]"
               >
@@ -454,12 +481,12 @@
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
                 >
-                  <i class="fa-regular fa-copy"></i>Copy
+                  <i class="fa-regular fa-copy copy-btn"></i>Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white w-38 bg-[#00a63e] rounded-lg"
+                  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-white call-btn w-38 bg-[#00a63e] rounded-lg"
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
