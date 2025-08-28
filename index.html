@@ -36,14 +36,14 @@
         <div
           class="w-20 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#ECFFF0]"
         >
-          <h1 class="font-bold">0</h1>
+          <h1 class="font-bold"><span id="mainHeart">0</span></h1>
           <br />
           <img src="./assets/heart.png" alt="" class="w-6" />
         </div>
         <div
           class="w-20 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#ECFFF0]"
         >
-          <h1 class="font-bold">100</h1>
+          <h1 class="font-bold"><span id="coin">100</span></h1>
           <br />
           <img src="./assets/coin.png" alt="" class="w-6" />
         </div>
@@ -80,7 +80,7 @@
         >
           <div
             id="card-1"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-1-head" class="flex justify-between">
               <img
@@ -88,7 +88,9 @@
                 alt=""
                 class="w-6 p-1 rounded-lg bg-[#ffe3e2]"
               />
-              <div><i class="fa-regular fa-heart text-[#707070]"></i></div>
+              <div>
+                <i id="heart" class="fa-regular fa-heart text-[#707070]"></i>
+              </div>
             </div>
             <div>
               <h1 class="font-bold mt-3">জাতীয় জরুরি সেবা</h1>
@@ -102,7 +104,10 @@
                 সার্বজনীন
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-1-footer"
+              class="flex md:flex-col gap-1 justify-between mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
@@ -121,7 +126,7 @@
           </div>
           <div
             id="card-2"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-2-head" class="flex justify-between">
               <img
@@ -141,7 +146,10 @@
                 পুলিশ
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-2-footer"
+              class="flex md:flex-col gap-1 justify-between mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
@@ -160,7 +168,7 @@
           </div>
           <div
             id="card-3"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-3-head" class="flex justify-between">
               <img
@@ -180,7 +188,10 @@
                 ফায়ার
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-3-footer"
+              class="flex md:flex-col gap-1 justify-between mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
@@ -199,7 +210,7 @@
           </div>
           <div
             id="card-4"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-4-head" class="flex justify-between">
               <img
@@ -219,7 +230,10 @@
                 স্বাস্থ্য
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-4-footer"
+              class="flex md:flex-col gap-1 justify-between md:mt-10 mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
@@ -238,7 +252,7 @@
           </div>
           <div
             id="card-5"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-5-head" class="flex justify-between">
               <img
@@ -260,7 +274,10 @@
                 সহায়তা
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-5-footer"
+              class="flex md:flex-col gap-1 justify-between mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
@@ -279,7 +296,7 @@
           </div>
           <div
             id="card-6"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-6-head" class="flex justify-between">
               <img
@@ -299,7 +316,10 @@
                 সরকারি
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-6-footer"
+              class="flex md:flex-col gap-1 justify-between md:mt-10 mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
@@ -318,7 +338,7 @@
           </div>
           <div
             id="card-7"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-7-head" class="flex justify-between">
               <img
@@ -340,7 +360,10 @@
                 বিদ্যুৎ
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-7-footer"
+              class="flex md:flex-col gap-1 justify-between mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
@@ -359,7 +382,7 @@
           </div>
           <div
             id="card-8"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-8-head" class="flex justify-between">
               <img
@@ -379,7 +402,10 @@
                 এনজিও
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-8-footer"
+              class="flex md:flex-col gap-1 justify-between mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
@@ -398,7 +424,7 @@
           </div>
           <div
             id="card-9"
-            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 shadow-md"
+            class="col-span-3 md:col-span-1 bg-white rounded-xl p-5 md:p-1 shadow-md"
           >
             <div id="card-9-head" class="flex justify-between">
               <img
@@ -420,7 +446,10 @@
                 পরিবহন
               </p>
             </div>
-            <footer id="card-1-footer" class="flex justify-between mt-4">
+            <footer
+              id="card-9-footer"
+              class="flex md:flex-col gap-1 justify-between mt-4"
+            >
               <div>
                 <button
                   class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white w-38 rounded-lg text-[#707070]"
