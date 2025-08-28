@@ -498,17 +498,20 @@
         <!-- //addCart/// -->
         <aside
           id="addCart"
-          class="col-span-1 md:col-span-3 flex justify-between p-5 rounded-lg bg-white shadow-md"
+          class="col-span-1 md:col-span-3 p-5 rounded-lg bg-white shadow-md"
         >
-          <div class="font-bold mt-2">
-            <i class="fa-regular fa-clock text-[#707070] mr-2"></i> Call History
+          <div class="cart-header flex justify-between items-center mb-2">
+            <div class="font-bold flex items-center">
+              <i class="fa-regular fa-clock text-[#707070]"></i> Call History
+            </div>
+            <div
+              class="w-25 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#00A63E]"
+            >
+              <h1 class="font-semibold text-white">Clear</h1>
+              <br />
+            </div>
           </div>
-          <div
-            class="w-25 h-10 flex justify-center items-center gap-1 rounded-3xl p-1 bg-[#00A63E]"
-          >
-            <h1 class="font-semibold text-white">Clear</h1>
-            <br />
-          </div>
+          <div id="cart-container" class="flex flex-col gap-2"></div>
         </aside>
       </div>
     </main>

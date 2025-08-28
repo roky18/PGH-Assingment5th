@@ -24,13 +24,41 @@ for (let callBtn of callBtns) {
       totalCoins.textContent = totalCoin;
 
       let card = callBtn.closest(".cards-all");
-      let secondLineText = card.querySelector(".Text2ndline").textContent;
-      let thirdLineText = card.querySelector(".Text3rdline").textContent;
+      let secondLineText = card
+        .querySelector(".Text2ndline")
+        .textContent.trim();
+      let thirdLineText = card.querySelector(".Text3rdline").textContent.trim();
 
-      // let secondThirdText = `${secondLineText} ${thirdLineText}`;
-      alert(`📞Calling${secondLineText}${thirdLineText}`);
+      alert("📞Calling" + " " + secondLineText + " " + thirdLineText + "...");
     } else {
       alert("❌আপনার পর্যাপ্ত কয়েন নেই কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
     }
+  });
+}
+
+//cart section///
+function getEleID(id) {
+  let element = document.getElementById(id);
+  return element;
+}
+
+let cardCallBtns = document.querySelectorAll(".call-btn");
+for (let cardCallBtn of cardCallBtns) {
+  cardCallBtn.addEventListener("click", function () {
+    let helpName =
+      cardCallBtn.parentNode.parentNode.parentNode.children[1].children[0]
+        .innerText;
+    let helpNum =
+      cardCallBtn.parentNode.parentNode.parentNode.children[1].children[2]
+        .innerText;
+    let cardContainer = getEleID("cart-container");
+    let newCart = document.createElement("div");
+    newCart.innerHTML = `
+<div class="bg-[#f2f2f2] rounded-xl p-4">
+              <h1 class="font-bold">${helpName}</h1>
+              <h1 class="font-bold text-[#707070]">${helpNum}</h1>
+            </div>
+`;
+    cardContainer.append(newCart);
   });
 }
